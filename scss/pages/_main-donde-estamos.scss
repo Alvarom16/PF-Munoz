@@ -1,0 +1,82 @@
+#main-donde-estamos{
+    .title-donde-estamos{
+        @extend %estilos;
+        padding-top: 35px;
+        animation: title-donde-estamos 1s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    iframe{
+        width: 90vh;
+        height: 60vh;
+        
+    }
+    section{
+
+     .section-donde-estamos{
+        @include flex(row,center,center);
+        padding-top: 50px;
+        gap: 50px;
+        padding-bottom: 50px;
+        animation: section-donde-estamos 1s;
+        
+
+        #horarios-donde-estamos{
+
+            .title-horarios{
+                color: white;
+            }
+            .horarios-atencion{ 
+
+                color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 25px;
+                list-style-type: disc;
+                padding-top: 70px;
+            }
+
+            
+        }
+        .button-donde-estamos{
+            margin-left: 80px;
+            margin-top: 60px;
+            background-image: linear-gradient(to left, rgba(0, 0, 250, 0.633)50%, white 50%);
+            background-size: 200%;
+            background-repeat: no-repeat;
+            background-position: right;
+            height: 40px;
+            width: 120px;
+            border: none;
+            transition: background-position .5s ease;
+            .href-button {
+                text-decoration: none;
+                color: white;
+            }
+            .href-button:hover {
+                color: black;
+            }
+        }
+        .button-donde-estamos:hover {
+            background-position: left;
+        }
+      }
+    }
+    @keyframes section-donde-estamos {
+        0%{
+            gap: 450px;
+        }
+        100%{
+            gap: 50px;
+        }
+    }
+    @keyframes title-donde-estamos {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}

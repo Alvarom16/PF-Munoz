@@ -1,0 +1,80 @@
+#main-servicios{
+    .title-servicios{
+        @extend %estilos;
+        animation: title-servicios 1s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    .img-servicios {
+        width: 50vw;
+    }
+    .section-servicios{
+        @include flex(column,center,center);
+        padding-top: 70px;
+        gap: 100px;
+        .tarjetas-servicios{
+            @include flex(column-reverse,normal,center);
+            gap: 30px;
+            padding-top: 50px;
+            gap: 100px;
+            .img-servicios{
+                width: 50vw;
+            }
+            .div-servicios{
+                @include flex(column,center,normal);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                .text-servicios{
+                    color: white;
+                    width: 60vw;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center
+                }
+            }
+        }
+        #boton-servicios{
+            .button-servicios{
+                @include medidas(normal,140px,60px);
+                margin-top: 20px;
+                margin-bottom: 40px;
+                background-image: linear-gradient(to left, rgba(0, 0, 250, 0.633)50%, white 50%);
+                background-size: 200%;
+                background-repeat: no-repeat;
+                background-position: right;
+                border: none;
+                transition: background-position .5s ease;
+                font-size: 20px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: black;
+                }
+            }
+ 
+            .button-servicios:hover {
+                background-position: left;
+            }
+        }
+    }
+
+
+    .h3-tarjetas{
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+    }
+    @keyframes title-servicios {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}

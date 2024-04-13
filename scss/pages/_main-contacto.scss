@@ -1,0 +1,76 @@
+#main-contacto{
+    .h1-contacto{
+        @extend %estilos;
+        animation: h1-contacto 1s;
+    }
+    .form-contacto{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .inputs{
+        background-color: lightgray;
+        border-radius: 10px 10px;
+        border: none;
+        text-align: center;
+        width: 250px;
+        height: 25px;
+    }
+    .inputs:focus {
+        transition: 1s;
+        background-color: white;
+    }
+    .main-contacto{
+        @include flex(column,normal,center);
+        gap: 80px;
+        padding-top: 10px;
+        .cajas-inputs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            animation: cajas-inputs 1s;
+            animation-delay: 0.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            .title-inputs{
+                padding-top: 65px;
+                font-size: 25px;
+                color: white;
+            }
+            #text-area{
+                .input-textarea{
+                    height: 50px !important;
+                }
+            }
+ 
+        }
+        .button-contacto{
+            padding-top: 60px;
+            display: flex;
+            justify-content: center;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+    }
+    @keyframes h1-contacto {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes cajas-inputs {
+        0%{
+            opacity: 0;
+    
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.main-confirmado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    .div-confirmado{
+        backdrop-filter: blur(0px);
+        @include flex( column, start, center);
+        color: white;
+    
+        img{
+            width: 150px;
+        }
+        h1{
+            font-size: $font-size-titles;
+        }
+        .p-confirmado{
+            font-size: 20px;
+            text-align: center;
+        }
+    }   
+    .div-button-confirmado{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 80px;
+    }
+    .button-confirmado{
+        height: 50px;
+        width: 110px;
+        font-size: 25px;
+        background-color: #615cfe;
+        border-radius: 8px ;
+        transition-duration: 0.5s;
+        a{
+            color: white;
+        }
+    }
+    .button-confirmado:hover{
+        background-color: #242fff;
+    }
+}

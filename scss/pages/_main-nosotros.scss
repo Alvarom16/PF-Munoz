@@ -1,0 +1,182 @@
+#main-nosotros{
+    .title-nosotros{
+        @extend %estilos;
+        animation-name: title-nosotros;
+        animation-duration: 2s; 
+    }
+    .section1-nosotros{
+        @include flex(row-reverse,center,normal);
+        padding-top: 100px;
+        gap: 100px;
+        animation: section1-nosotros 2s;
+        .img-nosotros{
+            width: 40vw;
+            z-index: 10;
+            animation: img-nosotros 2s;
+        }
+        .tarjeta-section-nosotros{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 120px;
+
+            .text-section-nosotros{
+                color: white;
+                font-size: 20px;
+                width: 30vw;
+                text-align: center;
+                animation: text-section-nosotros 1s;
+                z-index: 4;
+                animation-delay: 3.5s;
+                opacity: 0;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
+    .h2-nosotros{
+        display: flex;
+        color: white;
+        justify-content: center;
+        padding-top: 150px;
+        font-size: 50px;
+    }
+    .h3-tarjetas{
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+        z-index: 5;
+    }
+    .h3-nosotros{
+        animation: h3-nosotros 1.5s;
+        margin-top: 110px;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
+    }
+    .img-integrantes{
+        width: 20vw;
+    }
+    .tarjeta-section-integrantes{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 40px;
+        .text-section-integrantes{
+            color: white;
+            font-size: 20px;
+            width: 30vw;
+            text-align: center;
+        }
+    }
+    .section2-nosotros{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .div-maria{
+            @include flex(row-reverse,center,normal);
+            padding-top: 100px;
+            gap: 50px;
+        }
+        .div-juan{
+            display: flex;
+            padding-top: 110px;
+            justify-content: center;
+            gap: 50px;
+        }
+        .div-luisa{
+            @include flex(row-reverse,center,normal);
+            padding-top: 100px;
+            gap: 50px;
+        }
+        .div-carlos{
+            display: flex;
+            padding-top: 100px;
+            justify-content: center;
+            gap: 50px;
+        }
+        .div-pedro{
+            @include flex(row-reverse,center,normal);
+            padding-top: 100px;
+            gap: 50px;
+        }
+
+    }
+    .section3-nosotros{
+        @include flex(column,normal,center);
+        padding-top: 130px;
+        .ultimo-texto-nosotros{
+            color: white;
+            font-size: 18px;
+            width: 60vw;
+            text-align: center;
+        }
+        .button-nosotros{
+            @include medidas(normal,120px,40px);
+            margin-top: 60px;
+            
+            background-image: linear-gradient(to left, rgba(0, 0, 250, 0.633)50%, white 50%);
+            background-size: 200%;
+            background-repeat: no-repeat;
+            background-position: right;
+            border: none;
+            transition: background-position .5s ease;
+            
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color: black;
+            }
+        }
+        .button-nosotros:hover {
+            background-position: left;
+            
+        }
+    }
+
+    @keyframes title-nosotros {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes section1-nosotros {
+        0%{
+            gap: 0px;  
+        }
+        100%{
+            gap: 100px;
+        }
+    }
+    @keyframes h3-nosotros {
+        0%{
+        margin-top: 110px;
+        }
+        100%{
+        margin-top: 0px;
+        }
+    }   
+
+    @keyframes text-section-nosotros {
+       0%{
+        opacity: 0;
+       } 
+       100%{
+        opacity: 1;
+       }
+    }
+    @keyframes img-nosotros {
+        0%{
+            margin-left: -600px;
+        }
+        100%{
+            margin-left: 0px;
+        }
+    }
+}

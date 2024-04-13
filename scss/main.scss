@@ -1,0 +1,17 @@
+@import "utilities/reset";
+@import "utilities/mixin";
+@import "utilities/globals";
+@import "utilities/variables";
+@import "utilities/extend";
+
+@import "components/header";
+@import "components/footer";
+
+@import "pages/main-index";
+@import "pages/main-confirmado";
+@import "pages/main-contacto";
+@import "pages/main-donde-estamos";
+@import "pages/main-nosotros";
+@import "pages/main-servicios";
+
+@import "utilities/media-queries";
