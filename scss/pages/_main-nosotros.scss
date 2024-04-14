@@ -1,4 +1,5 @@
 #main-nosotros{
+    /*Titulo y seccion 1*/
     .title-nosotros{
         @extend %estilos;
         animation-name: title-nosotros;
@@ -55,6 +56,7 @@
         animation-fill-mode: forwards;
         animation-timing-function: ease;
     }
+    /*Seccion Integrantes*/
     .img-integrantes{
         width: 20vw;
     }

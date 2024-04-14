@@ -55,6 +55,11 @@ footer .footer .icons-footer a img {
   width: 55px;
 }
 
+#main-index {
+  /*Titulo y carrusel*/
+  /*Secciones*/
+  /*Boton*/
+}
 #main-index .title-index {
   padding-bottom: 60px;
   font-size: 40px;
@@ -265,6 +270,12 @@ footer .footer .icons-footer a img {
   background-color: #242fff;
 }
 
+#main-contacto {
+  /*Titulo*/
+  /*Inputs*/
+  /*Main*/
+  /*Keyframes*/
+}
 #main-contacto .h1-contacto {
   animation: h1-contacto 1s;
 }
@@ -337,6 +348,9 @@ footer .footer .icons-footer a img {
   }
 }
 
+#main-donde-estamos {
+  /*Titulo*/
+}
 #main-donde-estamos .title-donde-estamos {
   padding-top: 35px;
   animation: title-donde-estamos 1s;
@@ -356,6 +370,7 @@ footer .footer .icons-footer a img {
   gap: 50px;
   padding-bottom: 50px;
   animation: section-donde-estamos 1s;
+  /*Boton*/
 }
 #main-donde-estamos section .section-donde-estamos #horarios-donde-estamos .title-horarios {
   color: white;
@@ -408,6 +423,10 @@ footer .footer .icons-footer a img {
   }
 }
 
+#main-nosotros {
+  /*Titulo y seccion 1*/
+  /*Seccion Integrantes*/
+}
 #main-nosotros .title-nosotros {
   animation-name: title-nosotros;
   animation-duration: 2s;
@@ -596,6 +615,10 @@ footer .footer .icons-footer a img {
   }
 }
 
+#main-servicios {
+  /*Titulo*/
+  /*Main*/
+}
 #main-servicios .title-servicios {
   animation: title-servicios 1s;
   opacity: 0;
@@ -611,6 +634,7 @@ footer .footer .icons-footer a img {
   align-items: center;
   padding-top: 70px;
   gap: 100px;
+  /*Boton*/
 }
 #main-servicios .section-servicios .tarjetas-servicios {
   display: flex;

@@ -1,4 +1,5 @@
 #main-index{
+    /*Titulo y carrusel*/
     .title-index{
         @extend %estilos;
         padding-bottom: 60px;
@@ -27,7 +28,7 @@
             }
         }
     }
-
+    /*Secciones*/
     #section1-index{
         div{
             .h2-seccion-main{
@@ -116,6 +117,7 @@
         }
 
     }
+    /*Boton*/
     .boton-index{
         display: flex;
         align-items: center;

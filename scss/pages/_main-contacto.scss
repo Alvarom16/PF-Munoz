@@ -1,4 +1,5 @@
 #main-contacto{
+    /*Titulo*/
     .h1-contacto{
         @extend %estilos;
         animation: h1-contacto 1s;
@@ -8,6 +9,7 @@
         flex-direction: column;
         gap: 50px;
     }
+    /*Inputs*/
     .inputs{
         background-color: lightgray;
         border-radius: 10px 10px;
@@ -20,6 +22,7 @@
         transition: 1s;
         background-color: white;
     }
+    /*Main*/
     .main-contacto{
         @include flex(column,normal,center);
         gap: 80px;
@@ -56,6 +59,7 @@
         }
 
     }
+    /*Keyframes*/
     @keyframes h1-contacto {
         0%{
             opacity: 0;
